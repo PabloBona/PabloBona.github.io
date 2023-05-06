@@ -114,7 +114,7 @@ To run tests, run the following command:
 
 ### Deployment
 
-After completing your setup, it's time to make your website available online! I strongly suggest using  [Netlify](https://netlify.com), as it's incredibly simple to use.
+This proyect is deployed using [GitHub Pages](https://pages.github.com/).
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

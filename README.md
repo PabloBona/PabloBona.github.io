@@ -55,7 +55,7 @@ My Portfolio's tech stack included a combination of HTML and CSS to structure an
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- <a href="https://pablobona.github.io">Portfolio</a>
+- <a href="https://pablobona.github.io/index.html">Portfolio</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

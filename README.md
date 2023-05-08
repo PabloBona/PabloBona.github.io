@@ -55,7 +55,7 @@ My Portfolio's tech stack included a combination of HTML and CSS to structure an
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- <a href="https://pablobona.github.io/index.html">Portfolio</a>
+- Access my online portfolio and experiment with the different sections and projects I have included from here  <a href="https://pablobona.github.io/index.html">Live Demo</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,6 +135,7 @@ This proyect is deployed using [GitHub Pages](https://pages.github.com/).
 - [x] **Add animations and transitions**
 - [ ] **Add support for multiple languages**
 - [ ] **Implement a dark mode option**
+- [ ] **Add new breakpoints for screen dimension sm-lg-xl**
 - [ ] **Integrate with social media platforms**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

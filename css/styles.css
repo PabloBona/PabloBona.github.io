@@ -82,6 +82,26 @@ a.button:active {
   padding-top: 20px;
 }
 
+.logo-placeholder img {
+  padding-top: 1%;
+  width: 30%;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  background-size: contain;
+}
+
+.card img {
+  max-width: 100%;
+}
+
+.logo-placeholder img:hover {
+  transform: scale(1.1);
+}
+
 .main-navigation .logo-placeholder a {
   font-weight: 700;
   font-size: 1.8rem;
@@ -112,12 +132,6 @@ a.button:active {
 .hero .container {
   max-width: 92rem;
   padding-top: 9.2rem;
-}
-
-.hero img {
-  width: 100%;
-  height: auto;
-  background-size: contain;
 }
 
 .hero h1 {
@@ -185,10 +199,6 @@ a.button:active {
 
 .card:hover {
   filter: drop-shadow(0 48px 48px rgba(37, 47, 137, 0.08));
-}
-
-.card img {
-  max-width: 100%;
 }
 
 .contact p {

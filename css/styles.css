@@ -481,6 +481,7 @@ span.tag {
     overflow: hidden;
     text-decoration: none;
     color: black;
+    font-size: 1.6rem;
   }
 
   .desktop-nav li a::before {
@@ -676,10 +677,6 @@ span.tag {
   .desktop-nav ul {
     display: flex;
     flex-direction: row;
-  }
-
-  .desktop-nav a {
-    font-size: 1.6rem;
   }
 
   .none {

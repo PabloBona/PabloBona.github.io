@@ -87,7 +87,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/PabloBona/microverse-curriculum-html-css.git
+  git clone https://github.com/PabloBona/PabloBona.github.io.git
 ```
 
 ### Install
@@ -95,7 +95,7 @@ Clone this repository to your desired folder:
 Install this project with:
 
 ```sh
-  cd microverse-curriculum-html-css
+  cd PabloBona.github.io
   npm install
 ```
 
@@ -133,7 +133,6 @@ This proyect is deployed using [GitHub Pages](https://pages.github.com/).
 - [x] **Add contact form**       
 - [x] **Improve desktop version**  
 - [x] **Add animations and transitions**
-- [ ] **Update projects**
 - [ ] **Add support for multiple languages**
 - [ ] **Implement a dark mode option**
 - [ ] **Integrate with social media platforms**
@@ -145,7 +144,7 @@ This proyect is deployed using [GitHub Pages](https://pages.github.com/).
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/PabloBona/microverse-curriculum-html-css/issues).
+Feel free to check the [issues page](https://github.com/PabloBona/PabloBona.github.io/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -159,7 +158,7 @@ If you found this project useful, please consider giving it a star on GitHub to 
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Nicolas Alvarez, for his mentorship and guidance throughout the development process.
+"Special thanks to Microverse (https://www.microverse.org/) for providing a collaborative learning platform that has allowed me to improve my programming skills and has helped me achieve my professional goals."
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

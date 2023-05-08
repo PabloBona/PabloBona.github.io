@@ -678,6 +678,10 @@ span.tag {
     flex-direction: row;
   }
 
+  .desktop-nav a {
+    font-size: 1.6rem;
+  }
+
   .none {
     display: flex;
   }

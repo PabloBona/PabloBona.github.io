@@ -57,7 +57,8 @@ My Portfolio's tech stack included a combination of HTML and CSS to structure an
 
 - Access my online portfolio and experiment with the different sections and projects I have included from here  <a href="https://pablobona.github.io/index.html">Live Demo</a>
 
-## 🚀 Video Demo <a name="live-demo"></a>
+
+## ⭐️ Video Demo <a name="live-demo"></a>
 [![Project presentation: video demo](https://cdn.loom.com/sessions/thumbnails/128b7af0dfb94ee4a85560bb69ad74d6-with-play.gif)](https://www.loom.com/share/128b7af0dfb94ee4a85560bb69ad74d6)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

@@ -102,6 +102,46 @@ a.button:active {
   transform: scale(1.1);
 }
 
+.nav.active .burguer-menu {
+  z-index: 4;
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav.active .nav-links {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(96, 112, 255, 0.9);
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  padding: 8.8rem 2.8rem;
+  backdrop-filter: blur(6px);
+}
+
+.main-navigation a {
+  text-decoration-line: none;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+.nav-links li {
+  margin-bottom: 2.4rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+}
+
 .main-navigation .logo-placeholder a {
   font-weight: 700;
   font-size: 1.8rem;

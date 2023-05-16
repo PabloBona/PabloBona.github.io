@@ -844,10 +844,7 @@ span.tag {
     display: none;
   }
 
-  .works .card img {
-    min-width: 48%;
-  }
-
+  /* Open modal */
   .open .card {
     flex-direction: column;
     gap: 4rem;
@@ -856,6 +853,10 @@ span.tag {
   .open .card img {
     width: 100%;
     height: auto;
+  }
+
+  .works .card img {
+    min-width: 48%;
   }
 
   .open .modal-card h2 {

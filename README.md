@@ -25,7 +25,6 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-
 # 📖 Pablo Bonasera's Microverse Portfolio <a name="about-project"></a>
 
 **Pablo Bonasera's Microverse Portfolio** This repo contains my portfolio and a selection of projects and works that I have completed. Feel free to explore these projects and know me better.
@@ -55,15 +54,15 @@ My Portfolio's tech stack included a combination of HTML and CSS to structure an
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- Access my online portfolio and experiment with the different sections and projects I have included from here  <a href="https://pablobona.github.io/index.html">Live Demo</a>
+- Access my online portfolio and experiment with the different sections and projects I have included from here <a href="https://pablobona.github.io/">Live Demo</a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ⭐️ Video Demo <a name="live-demo"></a>
+
 [![Project presentation: video demo](https://cdn.loom.com/sessions/thumbnails/128b7af0dfb94ee4a85560bb69ad74d6-with-play.gif)](https://www.loom.com/share/128b7af0dfb94ee4a85560bb69ad74d6)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -88,7 +87,6 @@ yarn@v1.22.10 or higher
 ### Setup
 
 Clone this repository to your desired folder:
-
 
 ```sh
   cd my-folder
@@ -121,9 +119,7 @@ To run tests, run the following command:
 
 This proyect is deployed using [GitHub Pages](https://pages.github.com/).
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -135,8 +131,8 @@ This proyect is deployed using [GitHub Pages](https://pages.github.com/).
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [x] **Add contact form**       
-- [x] **Improve desktop version**  
+- [x] **Add contact form**
+- [x] **Improve desktop version**
 - [x] **Add animations and transitions**
 - [ ] **Add support for multiple languages**
 - [ ] **Implement a dark mode option**
@@ -144,7 +140,6 @@ This proyect is deployed using [GitHub Pages](https://pages.github.com/).
 - [ ] **Integrate with social media platforms**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -154,13 +149,11 @@ Feel free to check the [issues page](https://github.com/PabloBona/PabloBona.gith
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
 ## ⭐️ Show your support <a name="support"></a>
 
 If you found this project useful, please consider giving it a star on GitHub to show your support and help us reach a wider audience.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 

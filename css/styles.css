@@ -847,4 +847,44 @@ span.tag {
   .works .card img {
     min-width: 48%;
   }
+
+  .open .card {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .open .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .open .modal-card h2 {
+    font-size: 4rem;
+  }
+
+  #modal-container {
+    background-color: #c1c7d0;
+    backdrop-filter: blur(6px);
+  }
+
+  #modal-container .close-modal {
+    top: 3.8rem;
+    right: 3.8rem;
+  }
+
+  .open .card-content {
+    flex-direction: row;
+    padding-top: 0;
+    gap: 2.4rem;
+  }
+
+  .open .card-details {
+    display: flex;
+    flex-direction: column;
+    min-width: 30rem;
+  }
+
+  .open .card-content ul.categories {
+    margin: 0.8rem 0 1.9rem;
+  }
 }

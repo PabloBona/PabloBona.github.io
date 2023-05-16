@@ -19,7 +19,7 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 4.8rem 0 0 0;
   color: #344563;
   background-color: #f4f5f7;
 }
@@ -74,12 +74,14 @@ a.button:active {
 
 .main-navigation {
   display: flex;
-  justify-content: space-between;
   height: 4.8rem;
   align-items: center;
   padding: 0 3.2rem 0 2.4rem;
   background-color: #fff;
-  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .logo-placeholder img {
@@ -102,6 +104,46 @@ a.button:active {
   transform: scale(1.1);
 }
 
+.nav.active .burguer-menu {
+  z-index: 4;
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav.active .nav-links {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(96, 112, 255, 0.9);
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+  padding: 8.8rem 2.8rem;
+  backdrop-filter: blur(6px);
+}
+
+.main-navigation a {
+  text-decoration-line: none;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+.nav-links li {
+  margin-bottom: 2.4rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+}
+
 .main-navigation .logo-placeholder a {
   font-weight: 700;
   font-size: 1.8rem;
@@ -110,14 +152,25 @@ a.button:active {
   color: #6070ff;
 }
 
-.desktop-nav {
-  display: none;
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.burguer-menu button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
 }
 
 .hero {
   background-image: url(../img/background_hero.png);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat center center fixed;
   background-color: #fff;
   padding: 0 2.4rem;
   border-bottom-left-radius: 8rem;
@@ -238,7 +291,7 @@ ul.project-details li::before {
 }
 
 ul.project-details li:first-child::before {
-  content: "";
+  content: '';
   margin: 0;
 }
 
@@ -353,7 +406,7 @@ span.tag {
 }
 
 .expertise ul.expertise-categories > li h2::after {
-  content: "";
+  content: '';
   background-image: url(../img/icons/chevron-icon.svg);
   display: block;
   width: 2.4rem;
@@ -462,30 +515,31 @@ span.tag {
   .main-navigation {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 70px;
     padding-left: 15.5rem;
     padding-right: 14.3rem;
   }
 
-  .main-navigation a {
-    text-decoration-line: none;
-  }
-
-  .desktop-nav a {
+  .nav-links a {
     color: #344563;
   }
 
-  .desktop-nav li a {
+  .nav-links li {
+    margin-bottom: 0;
+  }
+
+  .nav-links li a {
     position: relative;
     overflow: hidden;
     text-decoration: none;
     color: black;
     font-size: 1.6rem;
+    font-weight: 400;
   }
 
-  .desktop-nav li a::before {
-    content: "";
+  .nav-links li a::before {
+    content: '';
     position: absolute;
     width: 100%;
     height: 2px;
@@ -497,7 +551,7 @@ span.tag {
     transition: all 0.3s ease-in-out 0s;
   }
 
-  .desktop-nav li a:hover::before {
+  .nav-links li a:hover::before {
     visibility: visible;
     transform: scaleX(1);
   }
@@ -561,15 +615,15 @@ span.tag {
     display: flex;
   }
 
-  .desktop-nav li:first-child {
+  .nav-links li:first-child {
     padding: 1rem 1.2rem;
   }
 
-  .desktop-nav li:nth-child(2) {
+  .nav-links li:nth-child(2) {
     padding: 1rem 1.2rem;
   }
 
-  .desktop-nav li:last-child {
+  .nav-links li:last-child {
     padding: 1rem 1.2rem;
   }
 
@@ -670,11 +724,11 @@ span.tag {
     border-color: #2230d2;
   }
 
-  .desktop-nav {
+  .nav-links {
     display: flex;
   }
 
-  .desktop-nav ul {
+  .nav-links ul {
     display: flex;
     flex-direction: row;
   }

@@ -150,6 +150,24 @@ const modalCardTemplate = (data) => `
 // initialize menu component
 initMenu();
 
+// validate email
+const emailInput = document.querySelector('#email');
+const contactForm = document.querySelector('#contact-form');
+const errorMessage = document.querySelector('.validationErrors');
+
+function isEmailLowerCase(email) {
+  return email.toLowerCase() === email;
+}
+
+contactForm.addEventListener('submit', (e) => {
+  if (isEmailLowerCase(emailInput.value)) {
+    errorMessage.innerHTML = '';
+  } else {
+    e.preventDefault();
+    errorMessage.innerHTML = '<p class="error">The email address should not contain uppercase letters.</p>';
+  }
+});
+
 // initialize cards component and attach Event Listeners
 cardData.forEach((data, i) => {
   worksContainer.innerHTML += cardTemplate(data, i);

@@ -164,6 +164,7 @@ contactForm.addEventListener('submit', (e) => {
     errorMessage.innerHTML = '';
   } else {
     e.preventDefault();
+    // prettier-ignore
     errorMessage.innerHTML = '<p class="error">The email address should not contain uppercase letters.</p>';
   }
 });

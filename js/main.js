@@ -190,3 +190,33 @@ openModalButtons.forEach((button) => {
     });
   });
 });
+
+// LocalStore save
+const yourName = document.querySelector('#name');
+const email = document.querySelector('#email');
+const text = document.querySelector('#message');
+
+function saveToStorage() {
+  const saveData = {
+    yourName: yourName.value,
+    email: email.value,
+    text: text.value,
+  };
+
+  localStorage.setItem('saveToDataKey', JSON.stringify(saveData));
+}
+
+yourName.addEventListener('input', saveToStorage);
+email.addEventListener('input', saveToStorage);
+text.addEventListener('input', saveToStorage);
+
+window.addEventListener('load', () => {
+  const dataSaved = localStorage.getItem('saveToDataKey');
+
+  if (dataSaved) {
+    const data = JSON.parse(dataSaved);
+    yourName.value = data.yourName;
+    email.value = data.email;
+    text.value = data.text;
+  }
+});

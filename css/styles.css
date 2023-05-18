@@ -300,6 +300,19 @@ ul.project-details li span.company {
   text-transform: uppercase;
 }
 
+.validationErrors {
+  color: #fff;
+  margin: 1rem;
+  display: block;
+}
+
+.validationErrors p {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
 .card .card-content p {
   font-size: 1.5rem;
 }

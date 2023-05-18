@@ -150,25 +150,6 @@ const modalCardTemplate = (data) => `
 // initialize menu component
 initMenu();
 
-// validate email
-const emailInput = document.querySelector('#email');
-const contactForm = document.querySelector('#contact-form');
-const errorMessage = document.querySelector('.validationErrors');
-
-function isEmailLowerCase(email) {
-  return email.toLowerCase() === email;
-}
-
-contactForm.addEventListener('submit', (e) => {
-  if (isEmailLowerCase(emailInput.value)) {
-    errorMessage.innerHTML = '';
-  } else {
-    e.preventDefault();
-    // prettier-ignore
-    errorMessage.innerHTML = '<p class="error">The email address should not contain uppercase letters.</p>';
-  }
-});
-
 // initialize cards component and attach Event Listeners
 cardData.forEach((data, i) => {
   worksContainer.innerHTML += cardTemplate(data, i);
@@ -191,32 +172,48 @@ openModalButtons.forEach((button) => {
   });
 });
 
-// LocalStore save
-const yourName = document.querySelector('#name');
-const email = document.querySelector('#email');
-const text = document.querySelector('#message');
+// Contact Form
+const contactForm = document.querySelector('#contact-form');
+const errorMessage = contactForm.querySelector('.validationErrors');
+const nameInput = contactForm.querySelector('#name');
+const emailInput = contactForm.querySelector('#email');
+const textInput = contactForm.querySelector('#message');
+
+function isEmailLowerCase(email) {
+  return email.toLowerCase() === email;
+}
+
+contactForm.addEventListener('submit', (e) => {
+  if (isEmailLowerCase(emailInput.value)) {
+    errorMessage.innerHTML = '';
+  } else {
+    e.preventDefault();
+    // prettier-ignore
+    errorMessage.innerHTML = '<p class="error">The email address should not contain uppercase letters.</p>';
+  }
+});
 
 function saveToStorage() {
   const saveData = {
-    yourName: yourName.value,
-    email: email.value,
-    text: text.value,
+    name: nameInput.value,
+    email: emailInput.value,
+    text: textInput.value,
   };
 
-  localStorage.setItem('saveToDataKey', JSON.stringify(saveData));
+  localStorage.setItem('contactFormData', JSON.stringify(saveData));
 }
 
-yourName.addEventListener('input', saveToStorage);
-email.addEventListener('input', saveToStorage);
-text.addEventListener('input', saveToStorage);
+nameInput.addEventListener('input', saveToStorage);
+emailInput.addEventListener('input', saveToStorage);
+textInput.addEventListener('input', saveToStorage);
 
 window.addEventListener('load', () => {
-  const dataSaved = localStorage.getItem('saveToDataKey');
+  const dataSaved = localStorage.getItem('contactFormData');
 
   if (dataSaved) {
     const data = JSON.parse(dataSaved);
-    yourName.value = data.yourName;
-    email.value = data.email;
-    text.value = data.text;
+    nameInput.value = data.name;
+    emailInput.value = data.email;
+    textInput.value = data.text;
   }
 });

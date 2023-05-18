@@ -207,9 +207,8 @@ nameInput.addEventListener('input', saveToStorage);
 emailInput.addEventListener('input', saveToStorage);
 textInput.addEventListener('input', saveToStorage);
 
-window.addEventListener('load', () => {
+document.addEventListener('DOMContentLoaded', () => {
   const dataSaved = localStorage.getItem('contactFormData');
-
   if (dataSaved) {
     const data = JSON.parse(dataSaved);
     nameInput.value = data.name;

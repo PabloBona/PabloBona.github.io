@@ -1,181 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://unpkg.com/normalize.css@8.0.1/normalize.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <title>Hello World Microverse Project</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css">
   </head>
-
   <body>
-    <header class="main-navigation">
-      <nav class="nav">
-        <div class="logo-placeholder">
-          <a href="https://www.linkedin.com/in/pablo-bonasera-142327257/" target="_blank" rel="noopener"
-            ><img src="./img/namelogo.png" alt="Pablo Bonasera"
-          /></a>
-        </div>
-        <div class="burguer-menu">
-          <button id="myButton" type="button" href="#">
-            <img id="myImage" src="./img/burguerMenu.svg" alt="Navigation Menu" />
+    <header class="main-nav">
+      <div id="top-nav">
+        <i class="bx bxl-facebook-square"></i>
+        <i class="bx bxl-twitter"></i>
+        <a href="#">English</a>
+        <a href="#">My Page</a>
+        <a href="#">Logout</a>
+      </div>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary font-family: 'Lato', sans-serif;
+      font-family: 'Poppins', sans-serif;
+      ">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
           </button>
-        </div>
-        <div class="nav-links">
-          <ul>
-            <li><a id="port-link" href="#portfolio">Portfolio</a></li>
-            <li><a id="about-link" href="#about">About</a></li>
-            <li><a id="cont-link" href="#contact">Contact</a></li>
-          </ul>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#">Hidden brand</a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            </form>
+          </div>
         </div>
       </nav>
     </header>
-
-    <section class="hero">
-      <div class="container">
-        <h1>I’m Pablo. <span>Glad to see you!</span></h1>
-        <p>
-          I’m a software developer! I can help you build a product , feature or website Look through some of my work and
-          experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
-        </p>
-        <h2>Let’s Connect</h2>
-        <ul>
-          <li>
-            <a href="#"><img src="./img/icons/twitter.svg" alt="Twitter Icon" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./img/icons/linkedin.svg" alt="Linkedin Icon" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./img/icons/M.svg" alt="Medium Icon" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./img/icons/twofinger.svg" alt="Two Icon" /></a>
-          </li>
-          <li>
-            <a href="#"><img src="./img/icons/githubaboutus.svg" alt="Github Icon" /></a>
-          </li>
-        </ul>
+    <section class="main-titles">
+      <div class="container-md red-bg">
+        <h2>"Hello, Food Lovers"</h2>
+      </div>
+      <div class="titles-container container-md">
+        <h1>
+          <span class="red-bg">HEALTHY FOOD</span> <br>
+          <span class="red-bg">GLOBAL CONFERENCE</span> <br>
+          <span class="red-bg">2023</span>
+        </h1>
+      </div>
+      <div class=" container-md  ">
+         
+        <div class="titles-container container-md ">
+        <h6>  We embrace the essence of healthy cooking as an invitation to prioritize self-care and embrace a wholesome lifestyle, all while nurturing and preserving our precious planet. </h6>
+        </div>
+         
+      </div>
+      <div class="titles-container container-md">
+        <h3><span class="date">2023.05.15(MON) - 16(FRI)</span></h3>
+        <h6><span class="city">@National University of Cooking, Mendoza</span></h6>
       </div>
     </section>
-
-    <section class="works">
-      <div class="container" id="portfolio"></div>
-    </section>
-
-    <section class="about-myself" id="about">
+    <section class="main-schedule p-4">
+      <p class="text-center fs-2 main-program">Main Program</p>
       <div class="container">
-        <div class="about-container">
-          <h2 class="about-title">About Myself</h2>
-          <p class="about-content">
-            Hello I’m a software developer! I can help you build a product , feature or website. Look through some of my
-            work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact
-            me.
-          </p>
-          <h3 class="uppercase">Let’s Connect</h3>
-          <ul class="social-icons">
-            <li>
-              <a href="#"><img src="./img/icons/linkedin.svg" alt="Linkedin Icon" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="./img/icons/twofinger.svg" alt="Two Icon" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="./img/icons/twitter.svg" alt="Twitter Icon" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="./img/icons/M.svg" alt="Medium Icon" /></a>
-            </li>
-            <li>
-              <a href="#"><img src="./img/icons/githubaboutus.svg" alt="Github Icon" /></a>
-            </li>
-          </ul>
-          <div class="about-footer">
-            <a href="#" class="button open-project-modal">Get my resume</a>
+        <div class="row gap-4 ">
+          <div class="col-md-2 col-12 flex-column w-border">
+            <div class="cardRow  align-items-center gap-4">
+            <img src="./card iconos/Lecture.svg" alt="">
+            <h3>Healthy Nutrition</h3>
+            <p class="m-0">The conference will cover a variety of relevant topics related to healthy food and the importance of a balanced diet</p> 
+            </div>
+          </div>
+          <div class="col-md-2 col-12 flex-column w-border">
+            <div class="cardRow   align-items-center gap-4">
+            <img src="./card iconos/Exhibition.svg" alt="">
+            <h3>Panel discussions</h3>
+            <p class="m-0">Experts will share different perspectives on specific topics related to healthy food</p> 
+          </div>
+          </div>
+          <div class="col-md-2 col-12 flex-column w-border">
+            <div class="cardRow   align-items-center gap-4">
+            <img src="./card iconos/Forum.svg" alt="">
+            <h3>Practical workshops</h3>
+            <p class="m-0">Hands-on workshops will be conducted where attendees can learn to prepare healthy recipes</p> 
+          </div>
+          </div>
+          <div class="col-md-2 col-12 flex-column w-border">
+            <div class="cardRow  align-items-center gap-4">
+            <img src="./card iconos/Workshop.svg" alt="" class="">
+            <h3>Inspiration</h3>
+            <p class="m-0">The conference aims to inspire and motivate attendees to adopt healthy eating habits, providing success stories</p>
+          </div> 
+          </div>
+          <div class="col-md-2 col-12 flex-column w-border">
+            <div class="cardRow align-items-center gap-4">
+            <img src="./card iconos/Ignite.svg" alt="">
+            <h3>Relevant topics</h3>
+            <p class="m-0">The conference will feature nutrition experts who will share their knowledge with you</p> 
+          </div>
           </div>
         </div>
-        <div class="expertise">
-          <ul class="expertise-categories">
-            <li class="expanded">
-              <h2 class="expertise-title">Languages</h2>
-              <ul class="expertise-category-items">
-                <li>
-                  <img src="./img/icons/jsicon.svg" alt="JavaScript Icon" />
-                  <p>JavaScript</p>
-                </li>
-                <li>
-                  <img src="./img/icons/htmlicon.svg" alt="HTML Icon" />
-                  <p>HTML</p>
-                </li>
-                <li>
-                  <img src="./img/icons/cssicon.svg" alt="CSS Icon" />
-                  <p>CSS</p>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <h2>Frameworks</h2>
-            </li>
-            <li>
-              <h2>Skills</h2>
-            </li>
-          </ul>
+        <p class="text-center join-btn mt-5"><button>Join WFC Conference 2023</button></p>
+      </div>  
+    </section>
+    <section class="main-invited">
+      <p class="text-center fs-2 main-program p-4">Featured Speakers</p>
+      <div class="container">
+        <div class="row">
+          <div class="content-invited" id="elena">
+            <img src="./img/invited1.jpg" alt="elena">
+            <div class="invited-content">
+            <h4>Elena Smith</h4>
+            <h5>Director of Art Cooking Center and a Member of MasterChef Cuba</h5>
+            <p>As the new winner of the Fried Chicken, Elena promotes now a healthy cook</p>
+            </div>
+          </div>
+          <div class="content-invited" id="isabella">
+            <img src="./img/invited2.jpg" alt="isabella">   
+            <div class="invited-content">
+            <h4>Isabella Johnson</h4>
+            <h5>Director of Art Cooking Center and a Member of MasterChef Cuba</h5>
+            <p>As the new winner of the Fried Chicken, Isabella promotes now a healthy cook</p>
+            </div>
+          </div>
+          <div class="content-invited" id="sophia">
+            <img src="./img/invited3.jpg" alt="sophia">   
+            <div class="invited-content">
+            <h4>Sophia Williams</h4>
+            <h5>Director of Art Cooking Center and a Member of MasterChef Cuba</h5>
+            <p>As the new winner of the Fried Chicken, Sophia promotes now a healthy cook</p>
+            </div>
+          </div>
+          <div class="content-invited" id="olivia">
+            <img src="./img/invited4.jpg" alt="olivia">   
+            <div class="invited-content">
+            <h4>Olivia Brown</h4>
+            <h5>Director of Art Cooking Center and a Member of MasterChef Cuba</h5>
+            <p>As the new winner of the Fried Chicken, Olivia promotes now a healthy cook</p>
+            </div>
+          </div>
+          <div class="content-invited" id="mia">
+            <img src="./img/invited5.jpg" alt="mia">   
+            <div class="invited-content">
+            <h4>Mia Miller</h4>
+            <h5>Director of Art Cooking Center and a Member of MasterChef Cuba</h5>
+            <p>As the new winner of the Fried Chicken, Mia promotes now a healthy cook</p>
+            </div>
+          </div>
+          <div class="content-invited" id="ava">
+            <img src="./img/invited6.jpg" alt="ava">   
+            <div class="invited-content">
+            <h4>Ava Davis</h4>
+            <h5>Director of Art Cooking Center and a Member of MasterChef Cuba</h5>
+            <p>As the new winner of the Fried Chicken, Ava promotes now a healthy cook</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
-    <section class="contact" id="contact">
-      <div class="background-container">
-        <div class="container">
-          <h2>Contact me</h2>
-          <p>
-            If you have an application you are interested in developing, a feature that you need built or a project that
-            needs coding.
-            <span>I’d love to help with it!</span>
-          </p>
-          <form id="contact-form" action="https://formspree.io/f/xzbqoegq" method="POST">
-            <div class="form-group">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter your Name Here"
-                maxlength="30"
-                required
-                pattern="[a-zA-Z\s]{1,30}"
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter your Email Here"
-                required
-                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-              />
-            </div>
-            <div class="form-group">
-              <textarea
-                name="message"
-                id="message"
-                rows="7"
-                cols="30"
-                placeholder="Write your message here..."
-                maxlength="500"
-                required
-              ></textarea>
-            </div>
-            <div class="validationErrors"></div>
-            <div class="form-actions">
-              <button class="form-button" type="submit">Get in touch</button>
-            </div>
-          </form>
+    <section class="main-partners">
+      <p class="text-center">Partners</p>
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex justify-content-center gap-4">
+            <img src="./iconos/mozilla.svg" alt="mozilla">
+            <img src="./iconos/google.svg" alt="google">
+            <img src="./iconos/naver.svg" alt="naver">
+            <img src="./iconos/daum.svg" alt="daum">
+            <img src="./iconos/airbnb.svg" alt="airbnb">
+          </div>
         </div>
       </div>
     </section>
-    <div id="modal-container"></div>
-    <script src="./js/main.js"></script>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col d-flex justify-content-center gap-4">
+            <a class="navbar-brand" href="#">Hidden brand</a>
+            <p>2023 World Food Conference</p>
+          </div>
+        </div>
+      </div>
+    </footer class="main-footer">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

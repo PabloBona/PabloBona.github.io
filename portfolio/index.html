@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/normalize.css@8.0.1/normalize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Hello World Microverse Project</title>
+  </head>
+
+  <body>
+    <header class="main-navigation">
+      <nav class="nav">
+        <div class="logo-placeholder">
+          <a href="https://www.linkedin.com/in/pablo-bonasera-142327257/" target="_blank" rel="noopener"
+            ><img src="./img/namelogo.png" alt="Pablo Bonasera"
+          /></a>
+        </div>
+        <div class="burguer-menu">
+          <button id="myButton" type="button" href="#">
+            <img id="myImage" src="./img/burguerMenu.svg" alt="Navigation Menu" />
+          </button>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a id="port-link" href="#portfolio">Portfolio</a></li>
+            <li><a id="about-link" href="#about">About</a></li>
+            <li><a id="cont-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1>I’m Pablo. <span>Glad to see you!</span></h1>
+        <p>
+          I’m a software developer! I can help you build a product , feature or website Look through some of my work and
+          experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.
+        </p>
+        <h2>Let’s Connect</h2>
+        <ul>
+          <li>
+            <a href="#"><img src="./img/icons/twitter.svg" alt="Twitter Icon" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/icons/linkedin.svg" alt="Linkedin Icon" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/icons/M.svg" alt="Medium Icon" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/icons/twofinger.svg" alt="Two Icon" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/icons/githubaboutus.svg" alt="Github Icon" /></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="works">
+      <div class="container" id="portfolio"></div>
+    </section>
+
+    <section class="about-myself" id="about">
+      <div class="container">
+        <div class="about-container">
+          <h2 class="about-title">About Myself</h2>
+          <p class="about-content">
+            Hello I’m a software developer! I can help you build a product , feature or website. Look through some of my
+            work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact
+            me.
+          </p>
+          <h3 class="uppercase">Let’s Connect</h3>
+          <ul class="social-icons">
+            <li>
+              <a href="#"><img src="./img/icons/linkedin.svg" alt="Linkedin Icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/icons/twofinger.svg" alt="Two Icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/icons/twitter.svg" alt="Twitter Icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/icons/M.svg" alt="Medium Icon" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/icons/githubaboutus.svg" alt="Github Icon" /></a>
+            </li>
+          </ul>
+          <div class="about-footer">
+            <a href="#" class="button open-project-modal">Get my resume</a>
+          </div>
+        </div>
+        <div class="expertise">
+          <ul class="expertise-categories">
+            <li class="expanded">
+              <h2 class="expertise-title">Languages</h2>
+              <ul class="expertise-category-items">
+                <li>
+                  <img src="./img/icons/jsicon.svg" alt="JavaScript Icon" />
+                  <p>JavaScript</p>
+                </li>
+                <li>
+                  <img src="./img/icons/htmlicon.svg" alt="HTML Icon" />
+                  <p>HTML</p>
+                </li>
+                <li>
+                  <img src="./img/icons/cssicon.svg" alt="CSS Icon" />
+                  <p>CSS</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h2>Frameworks</h2>
+            </li>
+            <li>
+              <h2>Skills</h2>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="background-container">
+        <div class="container">
+          <h2>Contact me</h2>
+          <p>
+            If you have an application you are interested in developing, a feature that you need built or a project that
+            needs coding.
+            <span>I’d love to help with it!</span>
+          </p>
+          <form id="contact-form" action="https://formspree.io/f/xzbqoegq" method="POST">
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your Name Here"
+                maxlength="30"
+                required
+                pattern="[a-zA-Z\s]{1,30}"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your Email Here"
+                required
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                name="message"
+                id="message"
+                rows="7"
+                cols="30"
+                placeholder="Write your message here..."
+                maxlength="500"
+                required
+              ></textarea>
+            </div>
+            <div class="validationErrors"></div>
+            <div class="form-actions">
+              <button class="form-button" type="submit">Get in touch</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <div id="modal-container"></div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

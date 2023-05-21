@@ -20,12 +20,77 @@ body {
   line-height: 1rem;
 }
 
+/* TopNav ONLY IN 768 ++*/
+.top-nav {
+  display: none;
+}
+
+/* .main-nav {
+  position: sticky;
+  width: 100%;
+  top: 0;
+} */
+
+.nav-links {
+  display: none;
+}
+
+.logo-placeholder {
+  display: none;
+}
+
+.main-nav.scrolled {
+  background-color: #fff;
+}
+
+.navigation.active .nav-links {
+  display: grid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: var(--salmon);
+  place-items: center;
+}
+
+.navigation.active .nav-links ul {
+  text-align: center;
+}
+
+.navigation.active .nav-links li a {
+  color: #d3d3d3;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.burguer-menu button {
+  z-index: 999;
+  position: relative;
+  border: none;
+}
+
+.burguer-menu button i {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.navigation.active .burguer-menu button i {
+  color: #fff;
+  position: fixed;
+}
+
+.burguer-menu button:active {
+  border: none;
+}
+
 /* Hero */
 .hero {
   background-image: url(../img/bg-hero.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 3rem 0;
+  padding: 6rem 0 3rem;
 }
 
 .hero h1 {
@@ -324,6 +389,41 @@ h2.salmon-underline:after {
 }
 
 @media (min-width: 768px) {
+  /* TopNav ONLY IN 768 ++*/
+  .top-nav {
+    display: block;
+    background-color: #272a31;
+  }
+  .social {
+    margin: 0;
+    padding: 0.2rem 0;
+    align-items: center;
+  }
+  .social a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.7rem;
+  }
+  .logo-placeholder {
+    display: block;
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+  .nav-links {
+    display: block;
+  }
+  .nav-links ul {
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+  }
+  .burguer-menu {
+    display: none;
+  }
   .hero h1 {
     font-size: 3rem;
   }

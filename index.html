@@ -19,45 +19,47 @@
   <body>
     <header class="main-nav">
       <div class="top-nav">
-        <ul class="list-inline">
-          <li>
-            <a href="#"><i class="bx bxl-facebook-square"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="bx bxl-twitter"></i></a>
-          </li>
-          <li><a href="#">English</a></li>
-          <li><a href="#">My Page</a></li>
-          <li><a href="#">Logout</a></li>
-        </ul>
-      </div>
-      <nav class="navbar navbar-expand-md">
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <a class="navbar-brand" href="#">Hidden brand</a>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
-              </li>
-            </ul>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <ul class="list-inline d-flex justify-content-end gap-4 social">
+                <li class="list-inline-item">
+                  <a href="#"><i class="bx bxl-facebook-square"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#"><i class="bx bxl-twitter"></i></a>
+                </li>
+                <li class="list-inline-item"><a href="#">Logout</a></li>
+                <li class="list-inline-item"><a href="#">My Page</a></li>
+                <li class="list-inline-item"><a href="#">Español</a></li>
+              </ul>
+            </div>
           </div>
+        </div>
+      </div>
+      <nav class="navigation">
+        <div class="logo-placeholder">
+          <a href="#" target="_blank" rel="noopener"
+            ><img src="./iconos/asd.svg" alt="Logo Food"
+          /></a>
+        </div>
+        <div class="burguer-menu">
+          <button class="btn" type="button">
+            <!-- <img
+              id="myImage"
+              src="./img/burguerMenu.svg"
+              alt="Navigation Menu"
+            /> --><i class="bx bx-menu"></i>
+          </button>
+        </div>
+        <div class="nav-links">
+          <ul class="list-unstyled">
+            <li><a id="port-link" href="/about.html">About</a></li>
+            <li><a id="about-link" href="#about">Program</a></li>
+            <li><a id="cont-link" href="#contact">Join</a></li>
+            <li><a id="cont-link" href="#contact">Sponsor</a></li>
+            <li><a id="cont-link" href="#contact">News</a></li>
+          </ul>
         </div>
       </nav>
     </header>
@@ -298,5 +300,6 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

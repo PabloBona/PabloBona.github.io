@@ -118,7 +118,7 @@ h2.salmon-underline:after {
 }
 
 .cardRow img {
-  max-width: 30%;
+  max-width: 3rem;
 }
 
 .titles-container h6 {
@@ -186,12 +186,6 @@ h2.salmon-underline:after {
   padding-top: 0.7rem;
   width: 4%;
   margin-bottom: 1rem;
-}
-
-.top-nav,
-.main-partners,
-.main-footer {
-  display: none;
 }
 
 .bx-chevron-down {
@@ -325,24 +319,20 @@ h2.salmon-underline:after {
   padding-top: 2rem;
   color: #fff;
 }
-
-@media (max-width: 767px) {
-  .cardRow {
-    display: flex;
-  }
-
-  .cardRow img {
-    max-width: 3rem;
-  }
-  .content-invited {
-    margin-bottom: 2rem;
-  }
-  .speaker-pic img {
-    margin-top: 1rem;
-  }
+.cardRow {
+  display: flex;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .cardRow {
+    display: block;
+  }
+  .speaker-contain {
+    margin-bottom: 2rem;
+  }
   .cardRow img {
     max-width: 70%;
     margin: 0 auto;
@@ -357,5 +347,62 @@ h2.salmon-underline:after {
   .program .cardRow {
     max-width: 20%;
     text-align: center;
+  }
+
+  .sm-fz {
+    font-size: 1.2rem;
+  }
+
+  .event-description.about {
+    font-size: 1.2rem;
+  }
+
+  .event-info.about p {
+    font-size: 1rem;
+  }
+  .logo-font {
+    font-size: 2rem;
+  }
+
+  .last-meet {
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero h1 {
+    font-size: 5rem;
+  }
+
+  .hero h1 span {
+    display: block;
+  }
+  .cardRow img {
+    max-width: 70%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .program {
+    flex-direction: row;
+    gap: 0.2rem;
+  }
+
+  .program .cardRow {
+    max-width: 20%;
+    text-align: center;
+  }
+  .sm-fz {
+    font-size: 1.5rem;
+  }
+  .event-description.about {
+    font-size: 1.5rem;
+  }
+  .event-info.about p {
+    font-size: 1.3rem;
+  }
+  .logo-font {
+    font-size: 3rem;
   }
 }

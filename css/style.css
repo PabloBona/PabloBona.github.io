@@ -19,7 +19,9 @@ body {
   font-size: 2rem;
   line-height: 1rem;
 }
-
+.list-unstyled button {
+  display: none;
+}
 /* TopNav ONLY IN 768 ++*/
 .top-nav {
   display: none;
@@ -364,7 +366,7 @@ h2.salmon-underline:after {
   display: block;
 }
 
-.main-partners p::after {
+.main-partners h2::after {
   content: '';
   display: block;
   border-bottom: 1px solid var(--salmon);
@@ -376,9 +378,9 @@ h2.salmon-underline:after {
 .main-partners {
   background-color: #7a7a7a;
   height: 30vh;
-
+  padding: 1rem;
   color: #fff;
-  max-width: 1440px;
+  max-width: 100vw;
 }
 
 .main-partners .sp {
@@ -389,6 +391,9 @@ h2.salmon-underline:after {
 }
 
 @media (min-width: 768px) {
+  .list-unstyled button {
+    display: flex;
+  }
   /* TopNav ONLY IN 768 ++*/
   .top-nav {
     display: block;
@@ -415,7 +420,6 @@ h2.salmon-underline:after {
   }
   .nav-links a {
     text-decoration: none;
-    font-size: 0.7rem;
     transition: color 0.3s ease;
   }
   .nav-links a:hover {

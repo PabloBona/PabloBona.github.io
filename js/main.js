@@ -1,16 +1,3 @@
-/* NavBar bg color change*/
-// const mainNav = document.querySelector('.main-nav');
-
-// document.addEventListener('scroll', function () {
-//   var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-
-//   if (scrolled >= 1) {
-//     mainNav.classList.add('scrolled');
-//   } else {
-//     mainNav.classList.remove('scrolled');
-//   }
-// });
-
 /* Menu Burguer*/
 
 const menuButton = document.querySelector('.burguer-menu button');

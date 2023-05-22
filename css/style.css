@@ -200,6 +200,9 @@ h2.salmon-underline:after {
   max-width: 100%;
 }
 
+.speaker-pic img {
+  border: 2px solid var(--salmon);
+}
 .content-invited h3 {
   font-size: 1rem;
   font-weight: 700;
@@ -389,25 +392,31 @@ h2.salmon-underline:after {
 .cardRow {
   display: flex;
 }
-
+.main-footer {
+  font-size: 0.7rem;
+}
 @media (min-width: 768px) {
   .list-unstyled button {
     display: flex;
   }
   /* TopNav ONLY IN 768 ++*/
+  .bxl-facebook-square,
+  .bxl-twitter {
+    font-size: 1.3rem;
+  }
   .top-nav {
     display: block;
     background-color: #272a31;
   }
   .social {
     margin: 0;
-    padding: 0.2rem 0;
+    padding: 0.3rem 0;
     align-items: center;
   }
   .social a {
     text-decoration: none;
     color: #fff;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   .logo-placeholder {
     display: block;
@@ -464,6 +473,9 @@ h2.salmon-underline:after {
   .speaker-contain {
     margin-bottom: 2rem;
   }
+  .content-invited .speaker-pic {
+    max-width: 10rem;
+  }
   .cardRow img {
     max-width: 70%;
     margin: 0 auto;
@@ -499,6 +511,9 @@ h2.salmon-underline:after {
     display: flex;
     gap: 2rem;
   }
+  .main-footer {
+    font-size: 0.8rem;
+  }
 }
 
 @media (min-width: 992px) {
@@ -514,7 +529,9 @@ h2.salmon-underline:after {
     margin: 0 auto;
     display: block;
   }
-
+  .more-invited-btn {
+    margin: 2rem;
+  }
   .program {
     flex-direction: row;
     gap: 0.2rem;
@@ -533,7 +550,13 @@ h2.salmon-underline:after {
   .event-info.about p {
     font-size: 1.3rem;
   }
+  .content-invited .speaker-pic {
+    max-width: 12rem;
+  }
   .logo-font {
     font-size: 3rem;
+  }
+  .main-footer {
+    font-size: 1.5rem;
   }
 }

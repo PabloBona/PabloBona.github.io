@@ -424,9 +424,16 @@ h2.salmon-underline:after {
   .list-unstyled button {
     background-color: #fff;
     font-size: 0.7rem;
+    border: 1px solid var(--salmon);
     color: var(--salmon);
+  }
+
+  .list-unstyled button:hover {
+    color: var(--salmon);
+    background-color: #fff;
     border-color: var(--salmon);
   }
+
   .navigation {
     display: flex;
     justify-content: space-between;

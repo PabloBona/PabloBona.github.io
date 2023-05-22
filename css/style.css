@@ -380,9 +380,10 @@ h2.salmon-underline:after {
 
 .main-partners {
   background-color: #7a7a7a;
-  height: 25vh;
+  height: 30vh;
   padding-top: 2rem;
   color: #fff;
+  max-width: 1440px;
 }
 .cardRow {
   display: flex;

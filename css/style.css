@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/cocogoose');
 :root {
   --dark: #272a31;
   --salmon: #ee523c;
@@ -19,8 +20,14 @@ body {
   font-size: 2rem;
   line-height: 1rem;
 }
-.list-unstyled button {
+.nav-links button {
   display: none;
+}
+
+.nav-links button:hover {
+  color: #fff;
+  background-color: var(--salmon);
+  border-color: var(--salmon);
 }
 /* TopNav ONLY IN 768 ++*/
 .top-nav {
@@ -91,9 +98,10 @@ body {
 }
 
 .hero h1 {
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   text-transform: uppercase;
   font-weight: 700;
+  font-family: 'cocogoose', 'Lato', sans-serif;
 }
 
 .hero .event-description {
@@ -109,7 +117,8 @@ body {
 }
 
 .hero .dates {
-  font-weight: 700;
+  font-weight: 500;
+  font-family: 'cocogoose', 'Lato', sans-serif;
 }
 
 .hero .red-bg {
@@ -158,7 +167,8 @@ h2.salmon-underline:after {
 }
 
 .main-partners img {
-  width: 17%;
+  max-width: 100%;
+  margin-bottom: 1rem;
 }
 
 .cardRow h3 {
@@ -259,7 +269,7 @@ h2.salmon-underline:after {
 }
 
 .more-invited-btn {
-  width: 90vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   padding: 0.7rem;
@@ -339,8 +349,11 @@ h2.salmon-underline:after {
 
 .about-container-img {
   border: 1px solid var(--grey);
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 1px;
+  max-width: 30rem;
+  display: block;
+  margin: 0 auto;
 }
 
 .image-container {
@@ -379,11 +392,9 @@ h2.salmon-underline:after {
 }
 
 .main-partners {
-  background-color: #7a7a7a;
-  height: 30vh;
-  padding: 1rem;
+  background-color: #414246;
+  padding: 2rem 0;
   color: #fff;
-  max-width: 100vw;
 }
 
 .main-partners .sp {
@@ -396,7 +407,7 @@ h2.salmon-underline:after {
   font-size: 0.7rem;
 }
 @media (min-width: 768px) {
-  .list-unstyled button {
+  .nav-links button {
     display: flex;
   }
   /* TopNav ONLY IN 768 ++*/
@@ -421,8 +432,8 @@ h2.salmon-underline:after {
   .logo-placeholder {
     display: block;
   }
-  .logo-placeholder i {
-    color: #272a31;
+  .logo-placeholder img {
+    max-width: 8rem;
   }
   .nav-links li a {
     color: #272a31;
@@ -434,24 +445,18 @@ h2.salmon-underline:after {
   .nav-links a:hover {
     color: var(--salmon);
   }
-  .list-unstyled button {
+  .nav-links button {
     background-color: #fff;
     font-size: 0.7rem;
     border: 1px solid var(--salmon);
     color: var(--salmon);
   }
 
-  .list-unstyled button:hover {
-    color: var(--salmon);
-    background-color: #fff;
-    border-color: var(--salmon);
-  }
-
   .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem 0;
   }
   .nav-links {
     display: block;
@@ -506,7 +511,9 @@ h2.salmon-underline:after {
   .logo-font {
     font-size: 2rem;
   }
-
+  .more-invited-btn {
+    display: none;
+  }
   .last-meet {
     display: flex;
     gap: 2rem;
@@ -518,20 +525,15 @@ h2.salmon-underline:after {
 
 @media (min-width: 992px) {
   .hero h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
-  .hero h1 span {
-    display: block;
-  }
   .cardRow img {
     max-width: 70%;
     margin: 0 auto;
     display: block;
   }
-  .more-invited-btn {
-    margin: 2rem;
-  }
+
   .program {
     flex-direction: row;
     gap: 0.2rem;

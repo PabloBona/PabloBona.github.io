@@ -46,6 +46,7 @@ body {
   height: 110vh;
   background: var(--salmon);
   place-items: center;
+  z-index: 100;
 }
 
 .navigation.active .nav-links ul {

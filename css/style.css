@@ -25,12 +25,6 @@ body {
   display: none;
 }
 
-/* .main-nav {
-  position: sticky;
-  width: 100%;
-  top: 0;
-} */
-
 .nav-links {
   display: none;
 }
@@ -134,7 +128,7 @@ h2.salmon-underline:after {
 }
 
 .main-schedule {
-  background-image: url(../img/main-schedule-bg.jpg);
+  background-image: url(../img/main-schedule-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--grey);
@@ -412,11 +406,31 @@ h2.salmon-underline:after {
   .logo-placeholder {
     display: block;
   }
+  .logo-placeholder i {
+    color: #272a31;
+  }
+  .nav-links li a {
+    color: #272a31;
+  }
+  .nav-links a {
+    text-decoration: none;
+    font-size: 0.7rem;
+    transition: color 0.3s ease;
+  }
+  .nav-links a:hover {
+    color: var(--salmon);
+  }
+  .list-unstyled button {
+    background-color: #fff;
+    font-size: 0.7rem;
+    color: var(--salmon);
+    border-color: var(--salmon);
+  }
   .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: 1rem 2rem;
   }
   .nav-links {
     display: block;

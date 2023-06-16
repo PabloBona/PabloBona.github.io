@@ -30,18 +30,18 @@ function initMenu() {
 
 const cardData = [
   {
-    title: 'Tonic',
+    title: 'World Food Conference',
     isReversed: false,
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
+      'World Food Conference is a webpage that focuses on promoting healthy food and the significance of maintaining a balanced diet. The Healthy Food Global Conference 2023 will cover a diverse range of topics related to healthy eating, such as nutrition, sustainable agriculture, and culinary practices.',
     longDescription:
-      "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent</p>",
-    workImg: './img/snapshoot_portfolio.png',
-    workImgDesk: './img/desktop-snapshot.svg',
-    details: ['Canopy', 'Back End Dev', '2015'],
+      'World Food Conference is a webpage that focuses on promoting healthy food and the significance of maintaining a balanced diet. The Healthy Food Global Conference 2023 will cover a diverse range of topics related to healthy eating, such as nutrition, sustainable agriculture, and culinary practices.',
+    workImg: './img/desktop-snapshot.png',
+    workImgDesk: './img/desktop-snapshot.png',
+    details: ['WFC', 'Capstone', '2023'],
     tags: ['HTML', 'CSS', 'JavaScript'],
-    demoURL: 'https://www.google.com',
-    githubURL: 'https://www.github.com',
+    demoURL: 'https://pablobona.github.io/Portal-Capstone-Project/index.html',
+    githubURL: 'https://github.com/PabloBona/Portal-Capstone-Project',
   },
   {
     title: 'Multi-Post Stories',

@@ -617,7 +617,7 @@ span.tag {
 }
 
 /* Medias Queries */
-@media (min-width: 768px) {
+@media (min-width: 1164px) {
   .container {
     padding: 11.4rem 0;
     max-width: 115.6rem;

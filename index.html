@@ -7,6 +7,11 @@
     <link href="https://unpkg.com/normalize.css@8.0.1/normalize.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Hello World Microverse Project</title>
+    <script>
+      function openPdfInNewWindow() {
+          window.open("https://media.licdn.com/dms/document/media/D4E2DAQGwYp650zlACg/profile-treasury-document-pdf-analyzed/0/1690549540557?e=1692230400&v=beta&t=c_mfF_YUT9Vbq1i9GoTlVZOa1Ary5a8fBiXZR8DKxI0", "_blank");
+      }
+  </script>
   </head>
 
   <body>
@@ -91,9 +96,9 @@
               <a href="#"><img src="./img/icons/githubaboutus.svg" alt="Github Icon" /></a>
             </li>
           </ul>
-          <div class="about-footer">
-            <a href="#" class="button open-project-modal">Get my resume</a>
-          </div>
+    <div class="about-footer open-project-modal">
+        <button class="button" onclick="openPdfInNewWindow()">Get my resume</button>
+    </div>
         </div>
         <div class="expertise">
           <ul class="expertise-categories">

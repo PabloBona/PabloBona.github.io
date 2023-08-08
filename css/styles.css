@@ -187,6 +187,12 @@ a.button:active {
   margin: 0 auto;
 }
 
+.container ul a img:hover {
+  transform: scale(1.3);
+  transition: 0.3s ease-in-out;
+  color: #007bff;
+}
+
 .hero .container {
   max-width: 92rem;
   padding-top: 9.2rem;

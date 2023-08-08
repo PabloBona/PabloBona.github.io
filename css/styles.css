@@ -98,6 +98,7 @@ a.button:active {
 
 .card img {
   max-width: 100%;
+  object-fit: contain;
 }
 
 .logo-placeholder img:hover {
@@ -522,6 +523,19 @@ span.tag {
 
 .expertise ul.expertise-categories > li.expanded ul.expertise-category-items {
   max-height: 30rem;
+}
+
+.open-project-modal button {
+  background-color: #6070ff;
+  color: #fff;
+  border: none;
+  border-radius: 0.8rem;
+  padding: 1.2rem 2.4rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  cursor: pointer;
+  transition: all ease 0.3s;
 }
 
 /* Contact Section */
